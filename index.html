@@ -272,7 +272,11 @@
         <h1 style="font-family: cursive; font-style: italic; margin-bottom: 30px; font-weight: bolder; color: rgba(149,166,248,1);">
             Enquiry Form
         </h1>
-            <form style="text-align: center;" action="MAILTO:Murijamiu@gmail.com" method="post">
+            <form style="text-align: center;" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="hidden">
+                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                </p>
                 <input type="text" name="name" placeholder="Enter your name" required class="minei" style="margin-top: 20px;">
                 <input type="email" name="email" placeholder="Enter your E-mail address" required class="minei">
                 <input type="tel" name="tel" placeholder="Enter your phone number" required maxlength="11" class="minei">
