@@ -321,3 +321,6 @@ ul#filters {
     margin-bottom: 30px;
     background-color: rgba(149,166,248,1);
 }
+.hidden{
+    display: hidden;
+}
